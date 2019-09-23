@@ -1,41 +1,39 @@
 /**
  * Class: Object-Oriented Design and Analysis
  * Professor: Orlando Montalvo
- * Assignment: HW 1
+ * Assignment: hw1
  * 
- * Date: 2018-09-03
+ * Date: 2019-09-23
  */
+
 package edu.fitchburgstate.csc7400.hw1;
 
 /**
- * Guitar contains the information needed to keep track of a type of guitar from
- * Rick's music store
- * 
- * @author HeadFirstOODA
- *
+ * @subject:OOAD
+ * @author:Orlando Montavo
+ * @version:1.1
+ * @01411928 Chandralekha
  */
-public class Guitar {
 
+public class Guitar {
+	private GuitarSpec spec;
 	/**
 	 * Full constructor
 	 * 
 	 * @param serialNumber manufacturer serial number
 	 * @param price store price
-	 * @param manufacturer the guitar's manufacturer
-	 * @param model the manufacturers model
-	 * @param type guitar type (electric/accoustic)
-	 * @param backWood the wood used for the guitar body
-	 * @param topWood the wood used for the guitar's face
+	 * @param Guitarspec 
 	 */
-	public Guitar(String serialNumber, double price, String manufacturer, String model, String type, String backWood,
-			String topWood) {
+	public Guitar(String serialNumber, double price, 
+			GuitarSpec spec) {
 		this.serialNumber = serialNumber;
 		this.price = price;
-		this.manufacturer = manufacturer;
+		this.spec=spec;
+		/*this.manufacturer= manufacturer;
 		this.model = model;
 		this.type = type;
 		this.backWood = backWood;
-		this.topWood = topWood;
+		this.topWood = topWood;*/
 	}
 
 	/**
@@ -58,7 +56,7 @@ public class Guitar {
 	/**
 	 * Sets the store price of the guitar
 	 */
-	public void setPrice(float newPrice) {
+	public void setPrice(double newPrice) {
 		this.price = newPrice;
 	}
 
@@ -133,4 +131,10 @@ public class Guitar {
 	 * Rick's price for the guitar
 	 */
 	private double price;
+	public GuitarSpec getGuitarSpec()//return the guitarspec
+	{
+		return spec;
+		
+	}
+	
 }
