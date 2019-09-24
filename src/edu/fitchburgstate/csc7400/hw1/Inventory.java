@@ -55,7 +55,7 @@ public class Inventory {
       }
     }
     return null;
-  };/]'\\\\\\'j]'\u']]]\
+  };
   
 /**
 *Search by Guitar using Guitar object with parameter(builder,model,type,backWood and topWood) 
