@@ -1,5 +1,5 @@
 /**
- * Class: Object-Oriented Design and Analysis
+ * ddClass: Object-Oriented Design and Analysis
  * Professor: Orlando Montalvo
  * Assignment: HW 1
  * 
